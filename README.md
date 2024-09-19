@@ -3,7 +3,7 @@
 
 
 
-> Focus Timer is a time measurement application for intervals ranging from 5 minutes to one hour, with features to activate relaxing sounds and an audible alert when the timer ends.
+>A weekly shopping list application that can help you not forget that important item when you go to the store. Using Vanilla JS and Local Storage
 
 ##
 
