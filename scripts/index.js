@@ -45,13 +45,16 @@ listField.addEventListener("click", (event) => {
   if(event.target && event.target.matches("li button img")){
     let elTarget = event.target.parentElement.parentElement
     elTarget.remove()
+    let countdown = 2000;
 
 
     alert.classList.remove("hidden")
     setTimeout(function(){
       alert.classList.add("hidden")}
-      , 2000)
-  }
+      , countdown)
+    }
+
+    countdown = ""
 })
 
 
