@@ -7,9 +7,8 @@
 
 ##
 
-
-<img src="https://github.com/user-attachments/assets/2c1f2422-64c3-4a4e-a693-a22c16e70330" alt="Focus Timer Logo" >
-<img src="https://github.com/user-attachments/assets/54d79c4b-1ea3-4b77-94f6-f3aa15947114" alt="Focus Timer Logo" >
+<img src="https://github.com/user-attachments/assets/58426857-cbe3-448c-bfdc-32ed2c4945a1" alt="Desktop version" >
+<img src="https://github.com/user-attachments/assets/fbd3ebb5-781a-4c10-bab2-dd22b1b22c99" alt="Mobile version with alert" >
 
 
 ## 📫 Contributing to <project_name>
