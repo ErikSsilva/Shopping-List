@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping List</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./scripts/index.js" defer type="module"></script>
+</head>
+<body>
+
+
+  <div class="container">
+    <h1 class="tittle">Weekly shopping</h1>
+  
+    <hr>
+
+    <form action="" class="item-input-field">
+      <input id="item-add-input" type="text" placeholder="Add a new item">
+      <label for="item-add-input" class="sr-only">Add a new item</label>
+      <button id="addItem-button">Add item</button>
+    </form>
+
+    
+      <ul class="item-list">
+        
+
+      </ul>
+    
+
+  </div>
+
+
+  <div class="remove-alert hidden">
+    <img src="./assets/warning-circle-filled.svg" alt="Warning alert">
+    <span>Item was removed from the list</span>
+    <img src="./assets/delete-small.svg" alt="Close alert">
+  </div>
+
+
+</body>
+</html>
