@@ -6,7 +6,7 @@ const removeButton = document.querySelectorAll(".remove")
 const alert = document.querySelector(".remove-alert")
 let itemIndex = listItems.length
 
-// Função para salvar os itens no localStorage
+
 function saveItemsToLocalStorage() {
   let items = []
   document.querySelectorAll(".item-list li").forEach(item => {
@@ -44,7 +44,7 @@ addButton.addEventListener('click', (event) => {
   newItem.append(newInput, newLabel, newButton)
   listField.append(newItem)
 
-  // Salvar itens no localStorage após adicionar
+ 
   saveItemsToLocalStorage()
 
   addInput.value = ""
@@ -52,7 +52,7 @@ addButton.addEventListener('click', (event) => {
 })
 
 
-// Função para carregar itens do localStorage
+
 function loadItemsFromLocalStorage() {
   let storedItems = JSON.parse(localStorage.getItem("items"))
 
@@ -81,11 +81,11 @@ function loadItemsFromLocalStorage() {
   }
 }
 
-// Carregar os itens ao iniciar a página
+
 window.addEventListener("DOMContentLoaded", loadItemsFromLocalStorage)
 
 
-// Função para remover itens do localStorage
+
 function removeItemFromLocalStorage(itemText) {
   let storedItems = JSON.parse(localStorage.getItem("items"))
 
@@ -100,7 +100,7 @@ listField.addEventListener("click", (event) => {
 
     elTarget.remove()
 
-    // Remover o item do localStorage
+   
     removeItemFromLocalStorage(label)
 
     let countdown = 2000;
