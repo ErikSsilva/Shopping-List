@@ -93,23 +93,28 @@ function removeItemFromLocalStorage(itemText) {
   localStorage.setItem("items", JSON.stringify(updatedItems))
 }
 
+let timer; 
+
 listField.addEventListener("click", (event) => {
   if (event.target && event.target.matches("li button img")) {
-    let elTarget = event.target.parentElement.parentElement
-    let label = elTarget.querySelector("label").innerText
+    let elTarget = event.target.parentElement.parentElement;
+    let label = elTarget.querySelector("label").innerText;
 
-    elTarget.remove()
+    elTarget.remove();
 
-   
-    removeItemFromLocalStorage(label)
+    removeItemFromLocalStorage(label);
 
     let countdown = 2000;
-    alert.classList.remove("hidden")
-    setTimeout(function () {
-      alert.classList.add("hidden")
-    }, countdown)
+    alert.classList.remove("hidden");
+
+    
+    clearTimeout(timer); 
+
+    timer = setTimeout(() => {
+      alert.classList.add("hidden");
+    }, countdown);
   }
-})
+});
 
 
 
